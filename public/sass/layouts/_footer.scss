@@ -1,6 +1,47 @@
 footer {
-  color: $color-secondary;
-  border-top: 1px solid $color-border-light;
-  margin-top: 16px;
-  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.output {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.day {
+  width: 100%;
+}
+
+.city {
+  width: 100%;
+  text-align: right;
+}
+
+.icons {
+  display: flex;
+}
+
+.icon-1 {
+  width: 100%;
+}
+
+.icon-2 {
+  width: 100%;
+}
+
+.icon-3 {
+  width: 100%;
+}
+
+.icon-4 {
+  width: 100%;
+}
+
+.icon-5 {
+  width: 100%;
+}
+
+h2 {
+  font-weight: lighter;
 }

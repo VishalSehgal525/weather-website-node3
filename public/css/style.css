@@ -1,44 +1,106 @@
 body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Ubuntu; }
+
+html {
+  height: 100%; }
+
+.fcontainer {
   display: flex;
-  flex-direction: column;
-  min-height: 100vh; }
+  height: 100%;
+  flex-direction: column; }
 
-.main-content {
-  flex-grow: 1; }
+*:focus {
+  outline: none; }
 
-body {
-  color: #333333;
-  font-family: arial;
-  max-width: 650px;
-  margin: 0 auto;
-  padding: 0 16px; }
+.heading {
+  font-size: 3rem;
+  margin-top: 0; }
 
 button {
-  cursor: pointer;
-  border: 1px solid #888888;
-  background: #888888;
-  padding: 8px; }
+  border: solid 1px white;
+  border-radius: 5px;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  margin: 20px; }
+  button:hover {
+    cursor: pointer;
+    background: white; }
+
+.search {
+  width: 24px;
+  background: transparent; }
 
 .logo {
   width: 250px; }
 
 input {
-  border: 1px solid #eeeeee;
-  padding: 8px; }
+  border: none;
+  font-size: 24px;
+  text-align: center;
+  background: transparent;
+  margin-top: 50px; }
+  input:active {
+    border: none; }
 
 header {
-  margin-top: 16px;
-  margin-bottom: 48px; }
-  header a {
-    color: #888888;
-    margin-right: 16px;
-    text-decoration: none; }
-  header h1 {
-    font-size: 64px;
-    margin-bottom: 16px; }
+  flex-grow: 1;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  background-image: url("../../img/evening.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
+a {
+  color: black;
+  font-weight: 100;
+  margin-right: 16px;
+  text-decoration: none;
+  opacity: 0.6; }
+  a:hover {
+    opacity: 1; }
+
+.navigation {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 30px; }
 
 footer {
-  color: #888888;
-  border-top: 1px solid #eeeeee;
-  margin-top: 16px;
-  padding: 16px 0; }
+  display: flex;
+  flex-direction: column; }
+
+.output {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end; }
+
+.day {
+  width: 100%; }
+
+.city {
+  width: 100%;
+  text-align: right; }
+
+.icons {
+  display: flex; }
+
+.icon-1 {
+  width: 100%; }
+
+.icon-2 {
+  width: 100%; }
+
+.icon-3 {
+  width: 100%; }
+
+.icon-4 {
+  width: 100%; }
+
+.icon-5 {
+  width: 100%; }
+
+h2 {
+  font-weight: lighter; }

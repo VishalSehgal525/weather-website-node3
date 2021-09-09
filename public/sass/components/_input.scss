@@ -1,4 +1,10 @@
 input {
-  border: 1px solid $color-border-light;
-  padding: 8px;
+  border: none;
+  font-size: 24px;
+  text-align: center;
+  background: transparent;
+  margin-top: 50px;
+  &:active {
+    border: none;
+  }
 }
