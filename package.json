@@ -1,7 +1,6 @@
 {
   "name": "web-server",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node src/app.js",
@@ -18,5 +17,14 @@
   "devDependencies": {
     "nodemon": "^2.0.12",
     "node-sass": "^6.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VishalSehgal525/weather-website-node3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/VishalSehgal525/weather-website-node3/issues"
+  },
+  "homepage": "https://github.com/VishalSehgal525/weather-website-node3#readme",
+  "description": ""
 }
