@@ -21,14 +21,25 @@ html {
 
 button {
   border: solid 1px white;
-  border-radius: 5px;
+  border-radius: 100px;
   font-size: 18px;
   background: rgba(255, 255, 255, 0.4);
   text-align: center;
+  color: #666666;
+  padding: 10px 20px;
   margin: 20px; }
   button:hover {
     cursor: pointer;
-    background: white; }
+    background: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+  button:link, button:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s; }
+  button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
 
 .search {
   width: 24px;
@@ -53,7 +64,8 @@ header {
   text-align: center;
   background-image: url("../../img/evening.jpg");
   background-repeat: no-repeat;
-  background-size: 100%; }
+  background-size: 100% 100%;
+  color: #eeeeee; }
 
 a {
   color: black;
@@ -65,12 +77,14 @@ a {
     opacity: 1; }
 
 .navigation {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.1);
   padding: 30px; }
 
 footer {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  color: black;
+  padding-bottom: 30px; }
 
 .output {
   display: flex;
@@ -88,19 +102,24 @@ footer {
   display: flex; }
 
 .icon-1 {
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
 
 .icon-2 {
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
 
 .icon-3 {
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
 
 .icon-4 {
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
 
 .icon-5 {
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
 
 h2 {
   font-weight: lighter; }

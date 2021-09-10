@@ -1,13 +1,27 @@
 button {
   border: solid 1px white;
-  border-radius: 5px;
+  border-radius: 100px;
   font-size: 18px;
   background: rgba(white, 0.4);
   text-align: center;
+  color: $color-secondary;
+  padding: 10px 20px;
   margin: 20px;
   &:hover {
     cursor: pointer;
     background: rgba(white, 1);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(black, 0.2);
+  }
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(black, 0.2);
   }
 }
 

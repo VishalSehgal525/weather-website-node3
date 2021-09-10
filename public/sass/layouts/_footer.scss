@@ -1,6 +1,8 @@
 footer {
   display: flex;
   flex-direction: column;
+  color: $color-tertiary;
+  padding-bottom: 30px;
 }
 
 .output {
@@ -24,22 +26,27 @@ footer {
 
 .icon-1 {
   width: 100%;
+  text-align: center;
 }
 
 .icon-2 {
   width: 100%;
+  text-align: center;
 }
 
 .icon-3 {
   width: 100%;
+  text-align: center;
 }
 
 .icon-4 {
   width: 100%;
+  text-align: center;
 }
 
 .icon-5 {
   width: 100%;
+  text-align: center;
 }
 
 h2 {

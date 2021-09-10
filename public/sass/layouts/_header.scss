@@ -5,7 +5,8 @@ header {
   text-align: center;
   background-image: url("../../img/evening.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
+  color: $color-primary;
 }
 
 a {
@@ -20,6 +21,6 @@ a {
 }
 
 .navigation {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(black, 0.1);
   padding: 30px;
 }
