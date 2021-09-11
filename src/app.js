@@ -29,7 +29,7 @@ app.get("", (req, res) => {
 
 app.get("/about", (req, res) => {
   res.render("about", {
-    title: "About me",
+    title: "About Us",
     name: "Vishal Sehgal",
   });
 });
@@ -54,24 +54,25 @@ app.get("/weather", (req, res) => {
       if (error) {
         return res.send({ error });
       }
-      forecast(latitude, longitude, (error, forecastData) => {
-        if (error) {
-          return res.send({ error });
+      forecast(
+        latitude,
+        longitude,
+        (error, forecastData, forecastData2, humidity, windSpeed) => {
+          if (error) {
+            return res.send({ error });
+          }
+          res.send({
+            forecast: forecastData,
+            forecast2: forecastData2,
+            humidity: humidity,
+            windSpeed: windSpeed,
+            location,
+            address: req.query.address,
+          });
         }
-        res.send({
-          forecast: forecastData,
-          location,
-          address: req.query.address,
-        });
-      });
+      );
     }
   );
-
-  // res.send({
-  //   forecast: "Nothing to show",
-  //   location: "Rajpura",
-  //   address: req.query.address,
-  // });
 });
 
 app.get("/products", (req, res) => {
@@ -100,9 +101,6 @@ app.get("*", (req, res) => {
     errorMessage: "Page Not Found",
   });
 });
-//app.com
-//app.com/help
-//app.com/about
 
 app.listen(port, () => {
   console.log("Server is up on port " + port);

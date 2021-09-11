@@ -1,99 +1,90 @@
 body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: Ubuntu;
-    color: white;
-    width: 100%;
-  }
-  
-  html {
-    height: 100%;
-  }
-  
-  .fcontainer {
-    display: flex;
-    /* height: 100%; */
-    flex-direction: column;
-    background-image: url("../img/evening.jpg");
-    background-attachment: fixed;    
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    
-
-  }
-  
-  *:focus {
-    outline: none;
-  }
-  .navigation {
-    background-color: rgba(0,0,0, 0.1);
-    padding: 30px;
-    text-align: center;
-   
-  }
-.creator{
-    margin: 10px 15px 10px;
-    background-color: rgba(255,255,255, 0.6);
-    display: flex;
-    color: black;
-    flex-direction: row;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    padding: 15px;
-    
-
-} 
-.Vishal,.Aaditya,.Arjun{
-    display: flex;
-    flex-direction: column;
-    width: 100% ;
-    padding: 5px;
-   
-}
-.center{
-text-align: center;
-
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Ubuntu;
+  color: white;
+  width: 100%;
 }
 
-img{
-    clip-path: circle(48%);
-    width: 60%;  
-    background-color: black;
+html {
+  height: 100%;
 }
 
-img:hover{
-      opacity: 0.7;
-
+.fcontainer {
+  display: flex;
+  /* height: 100%; */
+  flex-direction: column;
+  background-image: url("../img/evening.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
-.Vishal:hover{
 
+*:focus {
+  outline: none;
+}
+.navigation {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+}
+.creator {
+  margin: 10px 15px 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  color: black;
+  flex-direction: row;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+.Vishal,
+.Aaditya,
+.Arjun {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px;
+}
+.center {
+  text-align: center;
 }
 
-.head{
-    
-    text-align: center;
+img {
+  clip-path: circle(48%);
+  width: 60%;
+  background-color: black;
+}
+
+img:hover {
+  opacity: 0.7;
+}
+
+.head {
+  text-align: center;
 }
 
 a {
-    color: black;
-    font-weight: 100;
-    margin-right: 16px;
-    text-decoration: none;
-    opacity: 0.6;    
-  }
-  
-    a:hover {
-    opacity: 1;
-  }
-  .about{
-    text-align: center;
-    padding: 50px;
-    color: rgba(0,0,0, 0.8);
-    font-size: larger;
-    }
-  
-.heading{
-    font-size: 50px;
-    margin-top: 0;
+  color: black;
+  font-weight: 100;
+  margin-right: 16px;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+a:hover {
+  opacity: 1;
+}
+.about {
+  text-align: center;
+  padding: 50px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: larger;
+}
+
+.heading {
+  font-size: 3rem;
+  margin-top: 0;
+  font-weight: lighter;
 }
