@@ -4,14 +4,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/css/style.css" rel="stylesheet" />
-    <link rel="icon" href="/img/weather.png">
+    <link rel="icon" href="/img/weather.png" />
     <title>Error 404</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="main-content">
-      {{>header}}
-      <p>{{errorMessage}}</p>
+    <div class="fcontainer">
+      <header>
+        <div class="navigation">
+          <h1 class="heading">{{title}}</h1>
+          <a href="/">Weather</a>
+          <a href="/about">About</a>
+          <a href="/help">Contact Us</a>
+        </div>
     </div>
-      {{>footer}}
   </body>
 </html>

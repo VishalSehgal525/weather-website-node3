@@ -88,3 +88,9 @@ a:hover {
   margin-top: 0;
   font-weight: lighter;
 }
+
+.beautify-link {
+  color: #184e77;
+  text-decoration: none;
+  opacity: 0.9;
+}

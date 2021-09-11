@@ -88,7 +88,7 @@ app.get("/products", (req, res) => {
 
 app.get("/help/*", (req, res) => {
   res.render("404", {
-    title: "404",
+    title: "Error 404",
     name: "Vishal Sehgal",
     errorMessage: "Help Article not found",
   });
@@ -96,7 +96,7 @@ app.get("/help/*", (req, res) => {
 
 app.get("*", (req, res) => {
   res.render("404", {
-    title: "404",
+    title: "Error 404",
     name: "Vishal Sehgal",
     errorMessage: "Page Not Found",
   });

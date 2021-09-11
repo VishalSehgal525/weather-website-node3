@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="icon" href="/img/weather.png">
+    <link rel="icon" href="/img/weather.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,9 +15,33 @@
   </head>
   <body>
     <div class="fcontainer">
-      {{>header}}
+      <header>
+        <div class="navigation">
+          <h1 class="heading">{{title}}</h1>
+          <a href="/">Weather</a>
+          <a href="/about">About</a>
+          <a href="/help">Contact Us</a>
+        </div>
+        <br />
+        <form>
+          <input placeholder="Enter your location" />
+          <button>
+            Search
+          </button>
+        </form>
+        <div class="display">
+          <div class="temperature">
+            <p id="message-1">--&deg;C</p>
+            <p id="message-2">No Location</p>
+          </div>
+          <div class="details">
+            <p id="message-3">--</p>
+            <p id="message-4">--</p>
+            <p id="message-5">--</p>
+          </div>
+        </div>
 
-      {{!-- {{>footer}} --}}
+      </header>
     </div>
     <script src="/js/app.js"></script>
   </body>

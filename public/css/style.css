@@ -64,6 +64,9 @@ html {
     padding-top: 20px;
     padding-bottom: 20px; }
 
+.remover {
+  opacity: 1; }
+
 button {
   border: solid 1px white;
   border-radius: 100px;
